@@ -52,7 +52,11 @@ table {
 html{
 
 }
+
 body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #444;
+    text-rendering: optimizeLegibility;
     background-color: #e9ebee;
 }
 
@@ -66,5 +70,11 @@ body {
 .no-padding-right{padding-right: 0;}
 
 
-/* ******* responsive ******* */
+.profile-info-mod h2.name {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -.02em;
+    color: #444;
+}
 

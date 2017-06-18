@@ -66,6 +66,15 @@ code, kbd, tt, var {
     font: 14px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
+a:link, a:visited {
+    color: #3a8bbb;
+    text-decoration: none;
+}
+
+a:active {
+    outline: none;
+}
+
 .clear {clear: both;}
 
 .background-white {
@@ -75,12 +84,254 @@ code, kbd, tt, var {
 .no-padding-left{padding-left: 0;}
 .no-padding-right{padding-right: 0;}
 
+.profile-info-wrap {
+    margin-top: 30px;
+}
 
-.profile-info-mod h2.name {
+.floating-sidebar {
+    position: relative;
+    /*float: left;*/
+    /*width: 325px;*/
+    margin: 0 0 30px 15px;
+}
+
+.profile-info, .project-info {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+}
+
+.profile-info-mod {
+    padding: 20px 30px;
+    border-top: 1px solid #eee;
+}
+
+.profile-info-mod.profile-essentials {
+    border-top: none;
+}
+
+.profile-info-mod h2.vcard {
+    margin: 0 0 10px 0;
+    text-align: center;
+    line-height: normal;
+}
+
+.profile-info-mod h2.vcard .url {
     display: block;
     font-size: 24px;
     font-weight: 500;
     letter-spacing: -.02em;
     color: #444;
+}
+
+.profile-info-mod h2.vcard .url:hover {
+    text-decoration: none;
+}
+
+.profile-info-mod h2.vcard .photo {
+    display: block;
+    width: 80px;
+    margin: 0 auto 5px auto;
+    border-radius: 50%;
+}
+
+.profile-info-mod .location a, .profile-info-mod .project-owner a {
+    font-weight: normal;
+    color: #999;
+}
+
+.profile-info-mod .location a:hover {
+    text-decoration: none;
+    color: #444;
+}
+
+.profile-info-mod .bio, .profile-info-mod .project-desc {
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.profile-info-mod h3 {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.profile-info-mod .skills {
+    font-size: 12px;
+    line-height: 1;
+    color: #bbb;
+}
+
+.profile-info-mod .skills a {
+    display: inline-block;
+    margin: 0 4px 8px 0;
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    color: #444;
+    border-radius: 4px;
+}
+
+.profile-info-mod ul.profile-details li {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.profile-info-mod ul.profile-details li a {
+    display: block;
+    color: #444;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-info-mod ul.profile-details li a img {
+    position: relative;
+    top: 4px;
+    margin: 0 5px 0 0;
+    height: 20px;
+    opacity: .37;
+}
+
+/* ********************* */
+
+.portfolio-item-wrap {
+    margin-top: 30px;
+}
+
+.portfolio-item {
+    position: relative;
+    clear: left;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+}
+
+.portfolio-item-inner {
+    padding: 10px;
+}
+
+.portfolio-item-image{
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+}
+
+.portfolio-item-over {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 2;
+    text-decoration: none;
+    color: #888;
+    background: #fff;
+    background: rgba(255,255,255,0.96);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.portfolio-item-image:hover .portfolio-item-over{
+    opacity: 1;
+    -webkit-transition: opacity 250ms ease;
+    -moz-transition: opacity 250ms ease;
+    -ms-transition: opacity 250ms ease;
+    -o-transition: opacity 250ms ease;
+    transition: opacity 250ms ease;
+}
+
+.portfolio-item-over strong{
+    display: block;
+    margin: 0 25px 4px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #444;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.portfolio-item-over span{
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.portfolio-item-over em{
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    margin: 0 0 3px 0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    color: #777;
+}
+
+ul.tools {
+    margin: 10px 0 0 0;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+ul.tools li {
+    float: right;
+    width: auto;
+    margin: 0 0 0 12px;
+    display: inline;
+    font-size: 11px;
+    line-height: 1;
+    color: #aaa;
+}
+
+ul.tools li a:hover {
+    color: #777;
+}
+
+ul.tools li a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+ul.tools li.fav a:first-child, ul.tools li.fav span {
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(../images/icon-hearts.png);
+}
+
+ul.tools li.cmnt span {
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(../images/icon-comments.png);
+}
+
+ul.tools li.views span {
+    margin-left: 0;
+    border-left: none;
+    padding-left: 18px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(../images/icon-views-sm.png);
 }
 

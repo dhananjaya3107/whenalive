@@ -54,10 +54,16 @@ html{
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
     color: #444;
     text-rendering: optimizeLegibility;
     background-color: #e9ebee;
+}
+
+code, kbd, tt, var {
+    font: 14px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
 .clear {clear: both;}

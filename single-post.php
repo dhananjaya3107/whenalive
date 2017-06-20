@@ -38,7 +38,7 @@
         </div>
         <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <div class="posts-wrap">
-                <ul class="blog-posts">
+                <ul class="blog-posts single-post">
                     <?php
                     if ( have_posts() ) {
                         while ( have_posts() ) {

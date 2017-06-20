@@ -38,6 +38,7 @@
         </div>
         <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <div class="posts-wrap">
+                <h1 class="blog-title">The Blog</h1>
                 <ul class="blog-posts">
                     <?php
                     if ( have_posts() ) {

@@ -31,4 +31,5 @@ function whenalive_scripts() {
 add_action('wp_enqueue_scripts', 'whenalive_scripts');
 
 // Register Custom Navigation Walker
-require_once('inc/wp_bootstrap_navwalker.php');
+require_once('inc/wp-bootstrap-navwalker.php');
+

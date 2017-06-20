@@ -49,6 +49,8 @@ table {
 
 /* ******** reset css end ********* */
 
+
+/* *********** general css start *********** */
 html{
     margin: 0;
 }
@@ -83,6 +85,107 @@ a:active {
 
 .no-padding-left{padding-left: 0;}
 .no-padding-right{padding-right: 0;}
+
+/* ******************* general css ends *********** */
+
+/*-----------------*/
+/* --- Navbar CSS ---*/
+/* ------------------- */
+
+.navbar-default {
+    background-color: #2f2f2f;
+    border-color: #2f2f2f;
+    border-radius: 0;
+}
+.navbar-default .navbar-brand {
+    color: #999999;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-text {
+    color: #999999;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #999999;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #2f2f2f;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #999999;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: #2f2f2f;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+    background-color: #2f2f2f;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #2f2f2f;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #2f2f2f;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #2f2f2f;
+}
+.navbar-default .navbar-toggle {
+    border-color: #2f2f2f;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #2f2f2f;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #999999;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #999999;
+}
+.navbar-default .navbar-link {
+    color: #999999;
+}
+.navbar-default .navbar-link:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #999999;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #2f2f2f;
+    }
+}
+
+/* *********** navbar ends ********* */
+
+/* ******** portfolio start ************* */
 
 .profile-info-wrap {
     margin-top: 30px;
@@ -335,6 +438,8 @@ ul.tools li.views span {
     background-image: url(../images/icon-views-sm.png);
 }
 
+/* *************** blog start *************** */
+
 .blog-bio p{
     font-weight: normal;
     color: #999;
@@ -362,14 +467,24 @@ ul.tools li.views span {
     padding: 10px 30px 30px 30px;
 }
 
-.posts-wrap ul.blog-posts li{
-    margin-top: 25px;
+.posts-wrap h1.blog-title{
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.posts-wrap ul.blog-posts li:not(:first-child) {
+    margin-top: 40px;
+}
+
+.posts-wrap ul.blog-posts li h1{
+    margin-bottom: 15px;
+    font-size: 22px;
 }
 
 .posts-wrap ul.blog-posts li h1 a{
     color: #404040;
     text-decoration: none;
-    font-size: 22px;
 }
 
 .posts-wrap ul.blog-posts li h1 a:hover{
@@ -378,7 +493,7 @@ ul.tools li.views span {
 }
 
 .posts-wrap ul.blog-posts li .post-meta{
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .posts-wrap ul.blog-posts li .post-meta span{
@@ -399,3 +514,10 @@ ul.tools li.views span {
     color: #999;
     text-decoration: underline;
 }
+
+.single-post {
+    margin-top: 15px;
+}
+
+/* ********* blog ends ************ */
+

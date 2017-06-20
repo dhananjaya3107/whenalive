@@ -6,7 +6,7 @@
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 profile-info-wrap">
         <div class="floating-sidebar profile-info">
             <div class="profile-info-mod profile-essentials">
-                <h2 class="vcard">
+                <h2 class="my-vcard">
                     <a href="<?php echo home_url(); ?>" class="url">
                         <picture>
                             <source srcset="<?php echo get_template_directory_uri(); ?>/images/avatar.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">

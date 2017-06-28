@@ -581,9 +581,15 @@ a.comment-reply-link:hover,.reply a:hover,.comment-navigation .newer a:hover,.co
 .comment-navigation .newer a:hover,.comment-navigation .older a:hover{padding:4px}
 form#commentform textarea,form#commentform input{padding:2px 3px}
 form#commentform textarea{width:442px}
-input#submit{padding:5px 0 !important;border:0 !important}
+input#submit{
+    width: 80px;
+    background-color: #367389;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+}
 input#submit,p.subscribe-to-comments input{outline:0}
-input#submit:hover{padding:4px 0 !important;border:1px solid #4c7faa !important}
+input#submit:hover{background-color: #367389;}
 p.subscribe-to-comments{background:url('images/email_32.png') no-repeat}
 p.subscribe-to-comments,.comment-rss{height:32px;text-indent:42px;padding:5px 0 0 0}
 p.subscribe-to-comments input{margin:5px 3px 3px 3px !important;border:0}
@@ -595,3 +601,10 @@ p.subscribe-to-comments label{top:-2px;color:#666}
 .comment-total{text-align: center;font-size: 1.5em;color: #fff;}
 .comment-total span{font-size: 2em;color: #800000;}
 
+.allowed-tags{
+    background-color: #ececec;
+    padding: 10px;
+}
+.allowed-tags span{
+    font-size: 13px;
+}

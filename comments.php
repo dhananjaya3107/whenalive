@@ -121,16 +121,32 @@ if ( post_password_required() ) { ?>
 					</div>
 				</div>
 
-				<small>Allowed tags: <?php echo allowed_tags(); ?></small>
-				<p><input name="submit" type="submit" id="submit" tabindex="5" value="Post" />
-					<?php comment_id_fields(); ?>
-				</p>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="url">Allowed tags: </label>
+					<div class="col-sm-7">
+						<div class="allowed-tags">
+							<small> <span><?php echo allowed_tags(); ?></span></small>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="url"></label>
+					<div class="col-sm-7">
+						<p><input name="submit" type="submit" id="submit" tabindex="5" value="Post" />
+							<?php comment_id_fields(); ?>
+						</p>
+					</div>
+				</div>
+
+
 				<?php do_action('comment_form', $post->ID); ?>
 
 			</form>
 
-			<div class="comment-rss"><?php comments_rss_link('Subscribe to Comments via RSS'); ?></div>
-
+			<!--
+			<div class="comment-rss"><?php // comments_rss_link('Subscribe to Comments via RSS'); ?></div>
+			-->
 		<?php endif; // If registration required and not logged in ?>
 	</div>
 

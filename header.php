@@ -55,7 +55,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Brand</a>
+				<a class="navbar-brand" href="<?php echo home_url(); ?>">When Alive</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->

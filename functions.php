@@ -58,7 +58,8 @@ function advanced_comment($comment, $args, $depth) {
 				<p><?php comment_text() ?></p>
 
 				<div class="reply">
-					<i class="fa fa-reply" aria-hidden="true"></i><?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+					<i class="fa fa-reply" aria-hidden="true"></i>
+					<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 					<?php delete_comment_link(get_comment_ID()); ?>
 				</div>
 			</div>

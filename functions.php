@@ -68,10 +68,8 @@ function advanced_comment($comment, $args, $depth) {
 
 		<div class="clear"></div>
 	</li>
-<?php } ?>
+<?php }
 
-
-<?php
 // delete comment
 function delete_comment_link($id) {
 	if (current_user_can('edit_post')) {
@@ -79,13 +77,19 @@ function delete_comment_link($id) {
 		echo '<a href="'.admin_url("comment.php?action=cdc&dt=spam&c=$id").'"><i class="fa fa-times" aria-hidden="true"></i> Spam</a>';
 	}
 }
-?>
 
-<?php function check_referrer() {
+function check_referrer() {
 	if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == "") {
 		wp_die( __('Please enable referrers in your browser, or, if you\'re a spammer, get out of here!') );
 	}
 }
 
 add_action('check_comment_flood', 'check_referrer');
-?>
+
+/*
+ * comments section end
+ *
+ */
+
+include "inc/custom-post-types.php";
+
